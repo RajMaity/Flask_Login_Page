@@ -17,30 +17,32 @@ A lightweight, functional Flask web application that demonstrates user registrat
 ```bash
 git clone [https://github.com/RajMaity/Flask_Login_Page.git](https://github.com/RajMaity/Flask_Login_Page.git)
 cd Flask_Login_Page
+```
 
-2. Create a Virtual Environment (Recommended)
-Bash
-
+### 2. Create a Virtual Environment (Recommended)
+```bash
 # Windows
-python -m venv venv
-venv\Scripts\activate
+python -m venv .venv
+.venv\Scripts\activate
 
 # macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-3. Install Dependencies
-Bash
+python3 -m venv .venv
+. .venv/bin/activate
+```
 
+### 3. Install Dependencies
+```Bash
 pip install flask
-4. Run the Application
-Bash
+```
 
+### 4. Run the Application
+```Bash
 python app.py
+```
 The app will be live at http://127.0.0.1:5000/.
 
-📂 Project Structure
-Plaintext
-
+### 📂 Project Structure
+```Plaintext
 .
 ├── app.py              # Main Flask application logic & routing
 ├── templates/
@@ -48,7 +50,9 @@ Plaintext
 │   ├── registration.html # Signup form UI
 │   └── home.html         # User dashboard (Protected)
 └── README.md
-📝 Important Notes
+```
+
+### 📝 Important Notes
 Data Persistence
 This application currently uses an in-memory dictionary (credentials_dict) to store users.
 
@@ -59,14 +63,10 @@ Secret Key: The app.secret_key is hardcoded for demonstration. In a production e
 
 Password Storage: Currently, passwords are stored in plain text. For production apps, always use a library like Werkzeug or Bcrypt to hash passwords.
 
-👤 Author
-Raj Maity
 
-GitHub: @RajMaity
+### Future Enhancements
+Add SQLite/PostgreSQL database support for permanent storage.
 
-Future Enhancements
-[ ] Add SQLite/PostgreSQL database support for permanent storage.
+Implement Password Hashing for security.
 
-[ ] Implement Password Hashing for security.
-
-[ ] Add CSS styling (Bootstrap) to the HTML templates.
+Add CSS styling (Bootstrap) to the HTML templates.
