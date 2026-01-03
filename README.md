@@ -45,6 +45,8 @@ The app will be live at http://127.0.0.1:5000/.
 ```Plaintext
 .
 ├── app.py              # Main Flask application logic & routing
+├── static/
+│   └── style.css        # Styling css
 ├── templates/
 │   ├── login.html        # Login form UI
 │   ├── registration.html # Signup form UI
